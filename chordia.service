@@ -1,0 +1,12 @@
+[Unit]
+Description=Streamlit Chord App
+After=network.target
+
+[Service]
+User=www-data
+WorkingDirectory=/var/www/chord-detector
+ExecStart=/usr/bin/python3 -m streamlit run app.py --server.port 8501 --server.address 127.0.0.1 --server.headless true
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
