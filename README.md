@@ -18,8 +18,8 @@
 
 ## Usage
 
-1. `streamlit run ./latest/app_v10.py`
-   Replace `app_v10.py` with the latest version available.
+1. `streamlit run ./latest/app-latest.py`
+   Check if `app-latest.py` matches the latest version in the project root.
 2. Once the app is running int he browser, upload a MP3 or WAV file.
 3. It will take some time to download the models and other dependecies the first time you run it.
 4. Once you click the "Analyze" button, Chordia will produce a spectogram.
