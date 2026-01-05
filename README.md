@@ -9,13 +9,14 @@
 3. ./latest/requirements.txt
 4. wget
 
-### Installation
+### Installation Steps
 
 1. `pyenv virtualenv 3.11 chordia-venv`
 2. `pyenv activate chordia-venv`
-3. `uv pip install -R ./latest/requirements.txt`
+3. `uv pip install -r ./latest/requirements.txt `
+   If you face any errors related to installing a particular package, just run `uv pip install <package_name>` for that individual package. Python being Python, there are countless issues related to dependencies of different versions of different libraries and packages. These can not always be addressed with a simple requirements.txt file that always works, especially for an app in active development. If these issues come up, they will likely have to be resolved by you on ad-hoc basis accordingly.
 
-### Usage
+## Usage
 
 1. `streamlit run ./latest/app_v10.py`
    Replace `app_v10.py` with the latest version available.
@@ -27,7 +28,7 @@
 7. Once the analysis is done, Chordia will produce a Playback Guide with Letter Notes in order with their timestamps.
 8. There's also options to download the Letter Notes as TXT and for downloading a MIDI file based on Chordia's analysis of the uploaded file.
 
-### TODO
+## TODO
 
 * [ ] Improve detection of notes in complicated modern music.
 * [ ] Improve the analysis for songs that also have vocals over the music (maybe via voice and music isolation).
